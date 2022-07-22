@@ -3,7 +3,7 @@
 // Если таких элементов несколько, вывести их все.
 
 int[] randomArray = new int[50];
-int[] tempArray = new int[randomArray.Length/2];
+int[,] tempArray = new int[2, randomArray.Length/2];
 
 Console.Clear();
 Console.WriteLine("****************************************************************************");
@@ -59,7 +59,7 @@ void FindEquals(int[] currentArray, int[] tempArray)
             }
 
             if (count > 2) Console.WriteLine($"{value} встречается {count} раз");
-            
+
             if (count > maxCount) 
             {
                 maxValue = currentArray[i];
