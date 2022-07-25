@@ -25,8 +25,7 @@ string MakeStringFromNumber (int number)
     string valueToString = String.Empty;
     for (int i = 0; number > 0; i++)
     {
-        if (number % 2 == 1) valueToString = "1" + valueToString;
-        else valueToString = "0" + valueToString;
+        valueToString = number % 2 + valueToString;
         number /= 2;
     }
     return valueToString;
